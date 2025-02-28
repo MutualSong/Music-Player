@@ -1,0 +1,303 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'inter', sans-serif;
+    background-color: #000000;
+}
+
+.MusicPlayer {
+    width: 390px;
+    height: 844px;
+    background:linear-gradient(to bottom, #000000 0%, #000000 93%, #232728 93%, #23272857 100%);
+    border-radius: 63px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0px 2px 31px 1px #FFFFFFBA;
+}
+
+header {
+    width: 342px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.Text {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.Text div {
+    background-color: none;
+    color: #FFFFFFFC;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+}   
+
+.Text p {
+    background-color: none;
+    color: #FFFFFFFC;
+    font-size: 10px;
+    font-weight: 400; 
+    text-align: left;
+}
+
+.SideMenu {
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.Long {
+    width: 24px;
+    height: 2px;
+    background-color: #dfeff0;
+    text-align: right;
+}
+
+.Short {
+    width: 15.53px;
+    height: 2px;
+    background-color: #dfeff0;
+    text-align: right;
+}
+
+.Middle {
+    width: 20.47px;
+    height: 2px;
+    background-color: #dfeff0;
+    text-align: right; 
+}
+
+.SearchBar {
+    width: 340px;
+    height: 51px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #232728;
+    opacity: 0.8;
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+}
+
+.SearchBar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ececec;
+    font-size: 16px;
+    font-weight: 400;
+    flex: 1;
+    padding: 15px;
+}
+
+.SearchBar input::placeholder {
+    color: #ececec;
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.6;
+    padding-left: 15px;
+}
+
+.Search .img {
+    width: 20.18px;
+    height: 20px;
+    display: flex;
+    justify-self: start;
+}
+
+.Audio .img {
+    width: 24.21px;
+    height: 24px;
+    display: flex;
+    justify-self: end;
+}
+
+.Main {
+    width: 390px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+    left: -10px;
+}
+
+.SongSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.HeadLine {
+    width: 340px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.Header {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ViewAll {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.ViewAll p{
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.ViewAll img {
+    width: 7px;
+    height: 11px;
+}
+
+.SongsList {
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.Song {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 5px;
+}
+
+.Song img {
+    width: 136px;
+    height: 116px;
+    border-radius: 16px;
+}
+
+.Name {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.ArtistName {
+    color: rgba(255, 255, 255, 1);
+    font-size: 10px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.Line {
+    width: 343px;
+    height: 1px;
+    background-color: #c2faf1;
+    margin: 10px;
+}
+
+.ArtistList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:15px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.Artist img {
+    width: 101px;
+    height: 101.px;
+    border-radius: 50%;
+}
+
+.Artist div {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer {
+    width: 390px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Home img {
+    width: 24px;
+    height: 24px;
+}
+
+.Home div {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0.5px 10px 0.5px rgba(255, 255, 255, 0.73);
+}
+
+.Favorites {
+    width: 24px;
+    height: 24px;
+}
+
+.Downloads {
+    width: 25px;
+    height: 25px;
+}
+
+.Setting {
+    width: 24px;
+    height: 24px;
+}
